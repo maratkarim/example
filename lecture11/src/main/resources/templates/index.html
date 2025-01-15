@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Electronics shop items</h1>
+
+    <div>
+        <h2 th:each="item : ${zattar}" style="background-color: lightblue; " >
+            <span th:text="${item.getName()}" style="color: deepskyblue; font-size: 30px;"></span><br>
+            <span th:text="${item.getDescription()}" style="color: black; font-size: 20px;"></span><br>
+            <span th:text="${item.getPrice()}" style="color: chartreuse; font-size: 26px"></span><br>
+            <button style="font-size: 26px; border: none; background-color: darkgreen; color: white">Details</button>
+        </h2>
+    </div>
+
+
+
+</body>
+</html>
